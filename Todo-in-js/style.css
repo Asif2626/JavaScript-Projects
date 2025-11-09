@@ -1,0 +1,56 @@
+.body {
+  background-color: #87BAED;
+}
+
+.container,
+table {
+  margin: auto;
+  text-align: center;
+}
+
+.nav_item {
+  color: white;
+  padding: 10px;
+  background-color: #41b4e9;
+  border: 2px solid #41b4e9;
+  border-radius: 10px;
+}
+
+.item {
+  margin: 5px;
+  padding: 10px;
+}
+
+.btn {
+  padding: 5px;
+  margin: 3px;
+}
+
+.addBtn,
+.resetBtn,
+.editBtn {
+  color: #fff;
+  background-color: #41b4e9;
+  border: 2px solid #41b4e9;
+  border-radius: 5px;
+}
+
+.deleteBtn {
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+}
+
+.caption {
+  background-color: #f0ec25;
+
+}
+
+.register,
+.login {
+  color: #fff;
+  background-color: #41b4e9;
+  border: 2px solid #41b4e9;
+  border-radius: 10px;
+}

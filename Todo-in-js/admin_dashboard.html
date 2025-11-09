@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System - Admin Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="body">
+
+  <header>
+    <div style="display: flex; justify-content: space-around; align-items: center;">
+      <button onclick="print()" class="nav_item">Print</button>
+      <h1>Welcome, <span id="user_name"></span></h1>
+      <button onclick="logout()" class="nav_item">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Welcome to the dashboard</h2>
+      <p>This section is for Admin users. We can access to employee management.</p>
+    </section>
+    <section>
+      <h2>Employee Form</h2>
+      <form id="employee_form">
+        <input type="text" id="employee_name" class="item" placeholder="Enter Name"><br>
+        <input type="email" id="employee_email" class="item" placeholder="Enter Email"><br>
+        <input type="text" id="employee_address" class="item" placeholder="Enter address"><br>
+        <input type="number" id="employee_age" class="item" placeholder="Enter age"><br>
+        <button type="submit" class="btn addBtn">Add Employee</button>
+      </form>
+    </section>
+    <section style="margin-top: 30px;">
+      <table id="employee_table">
+        <caption class="caption">Employee Data Table</caption>
+        <thead>
+          <tr>
+            <th class="item">ID</th>
+            <th class="item">Name</th>
+            <th class="item">Email</th>
+            <th class="item">Address</th>
+            <th class="item">Age</th>
+            <th class="item">Edit/ View</th>
+            <th class="item">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Employees will be loaded here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <div class="container">
+      <p>Employee Management System &copy; 2025. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="/script.js"></script>
+
+</body>
+
+</html>
