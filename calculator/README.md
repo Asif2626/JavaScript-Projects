@@ -1,5 +1,5 @@
 # Date: 02-04-2023 
-# 🧑‍💻 Author:  Asif Ali
+# 💻 Author:  Asif Ali
 # Calculator 
 
 💡 Simple Web Calculator

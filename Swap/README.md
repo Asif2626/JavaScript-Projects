@@ -1,5 +1,5 @@
 # Date: 31-03-2023
-# 🧑‍💻 Author:  Asif Ali
+# 💻 Author:  Asif Ali
 # Swap
 
 🔄 Number Swapper (jQuery Project)
