@@ -43,8 +43,3 @@ Press C to clear the screen.
 The calculator uses JavaScript’s eval() function to evaluate expressions.
 While this works fine for personal use, avoid using untrusted input or deploying this version publicly.
 For more secure or complex applications, consider writing a custom math parser.
-
-🧑‍💻 Author
-# Asif Ali
-A simple yet functional web calculator created to demonstrate core web development concepts:
-HTML structure, CSS styling, and JavaScript interactivity.
