@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(beauty.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+div > form{
+  padding: 30px;
+  margin: 200px;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  color: blue;
+  background: transparent;
+  border: 2px solid rgb(246, 253, 57);
+}
+
+div > form > input.txt{
+  text-align: center;
+  height: 30px;
+  width: 60%;
+  color: rgb(17, 186, 181);
+  background: transparent;
+}
+
+div > form > input.btn{
+  text-align: center;
+  margin-left: 50px;
+  height: 30px;
+  width: 70px;
+  color: rgb(235, 225, 225);
+  background-color: rgb(14, 14, 226);
+}
