@@ -6,3 +6,4 @@
 # JavaScript Learning
 # Todo-in-js
 # Increment-Decrement-Calculator-using-js
+# Number-Count-using-JS
