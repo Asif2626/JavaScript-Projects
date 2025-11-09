@@ -72,7 +72,3 @@ DOM selection and manipulation with jQuery
 Handling user input and updating form fields dynamically
 Using CSS Flexbox for centered layouts
 Implementing interactive web forms
-
-🧑‍💻 Author
-# Asif Ali
-Simple yet effective demonstration of jQuery’s power for dynamic user interfaces.
