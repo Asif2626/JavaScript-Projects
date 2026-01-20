@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculation</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        // 1. Addition Function
+        function addition() {
+            const num1 = + prompt("Enter First Number: ");
+            const num2 = + prompt("Enter Second Number: ");
+            const result = num1 + num2;
+            alert(` The Result is ${result}`);
+        }
+
+        // 2. Subtraction Function
+        function subtraction() {
+            const num1 = + prompt("Enter First Number: ");
+            const num2 = + prompt("Enter Second Number: ");
+            const result = num1 - num2;
+            alert(` The Result is ${result}`);
+        }
+
+        // 3. Multiplication Function
+        function multiplication() {
+            const num1 = + prompt("Enter First Number: ");
+            const num2 = + prompt("Enter Second Number: ");
+            const result = num1 * num2;
+            alert(` The Result is ${result}`);
+        }
+
+        // 4. Division Function
+        function division() {
+            const num1 = + prompt("Enter First Number: ");
+            const num2 = + prompt("Enter Second Number: ");
+
+            if (num2 === 0) {
+                alert("Error! Can't by divided");
+            } else {
+                const result = num1 / num2;
+                alert(` The Result is ${result}`);
+            }
+        }
+
+        // 5. Square Root Function
+        function squareRoot() {
+            const num = + prompt("Enter Number: ");
+
+            if (num < 0) {
+                alert("Error! can't calculate square root of a neagative value");
+            }
+            else {
+                const result = Math.sqrt(num);
+                alert(` The result is ${result} `);
+            }
+        }
+
+        // 6. Square Function
+        function square() {
+            const num = + prompt("Enter number: ");
+            const result = num * num;
+            alert(` The reslut is ${result}`);
+        }
+
+        // 7. Factorial Function
+        function factorial() {
+            const num = + prompt("Enter a positive integer:");
+
+            if (num < 0) {
+                alert("Error: Factorial is not defined for negative numbers!");
+            } else {
+                const result = 1;
+                for (const i = 2; i <= num; i++) {
+                    result *= i;
+                }
+                alert(`The factorial is: ${result}`);
+            }
+        }
+
+        // 8. Remainder Function
+        function remainder() {
+            const num1 = + prompt("Enter First Number");
+            const num2 = + prompt("Enter Second Number");
+            if (num2 === 0) {
+                alert("Error: Cannot divide by zero!");
+            } else {
+                const result = num1 % num2;
+                alert(` The result is ${result}`);
+            }
+        }
+
+        // 9. Power Function
+        function power() {
+            const base = + prompt("Enter base");
+            const exponent = + prompt("Enter exponent");
+            const result = Math.pow(base, exponent);
+            alert(` The power is ${result}`);
+        }
+
+        // 10. Absolute Value Function
+        function absoluteValue() {
+            const num = + prompt("Enter Number: ");
+            const reslut = Math.abs(num);
+            alert(` The result is ${reslut}`);
+        }
+
+        // 11. Average Function
+        function average() {
+            const num1 = + prompt("Enter First number: ");
+            const num2 = + prompt("Enter Second number: ");
+            const num3 = + prompt("Enter Third number: ");
+            const result = (num1 + num2 + num3) / 3;
+            alert(` The Result is ${result}`);
+        }
+
+        // 12. Maximum Function
+        function maximum() {
+            const num1 = + prompt("Enter First number: ");
+            const num2 = + prompt("Enter Second number: ");
+            const reslut = num1 > num2 ? num1 : num2;
+            alert(` The result is ${reslut}`);
+        }
+
+        // 13. Minimum Function
+        function minimum() {
+            const num1 = + prompt("Enter First number: ");
+            const num2 = + prompt("Enter Second number: ");
+            const reslut = num1 < num2 ? num1 : num2;
+            alert(` The result is ${reslut}`);
+        }
+
+        // 14. Round Function
+        function round() {
+            const num = + prompt("Enter number: ");
+            const reslut = Math.round(num);
+            alert(` The Result is ${reslut} `);
+        }
+
+        // 15. Percentage Function
+        function percentage() {
+            const num = + prompt("Enter number: ");
+            const percent = + prompt("Enter Percent: ");
+            const reslut = (num * percent) / 100;
+            alert(`${percent}% of ${num} is ${reslut} `);
+        }
+
+        // Main menu function to select which operation to perform
+        function calculator() {
+            let choice;
+            do {
+                choice = prompt(`Choose an operation:
+        1. Addition
+        2. Subtraction
+        3. Multiplication
+        4. Division
+        5. Square Root
+        6. Square
+        7. Factorial
+        8. Remainder
+        9. Power
+        10. Absolute Value
+        11. Average
+        12. Maximum
+        13. Minimum
+        14. Round
+        15. Percentage
+        0. Exit`);
+
+                switch (choice) {
+                    case '1': addition(); break;
+                    case '2': subtraction(); break;
+                    case '3': multiplication(); break;
+                    case '4': division(); break;
+                    case '5': squareRoot(); break;
+                    case '6': square(); break;
+                    case '7': factorial(); break;
+                    case '8': remainder(); break;
+                    case '9': power(); break;
+                    case '10': absoluteValue(); break;
+                    case '11': average(); break;
+                    case '12': maximum(); break;
+                    case '13': minimum(); break;
+                    case '14': round(); break;
+                    case '15': percentage(); break;
+                    case '0': alert("Goodbye!"); break;
+                    default: alert("Invalid choice. Please try again.");
+                }
+            } while (choice !== '0');
+        }
+
+        // Start the calculator
+        calculator();
+    </script>
+
+</body>
+
+</html>
